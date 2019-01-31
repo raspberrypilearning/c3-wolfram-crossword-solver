@@ -1,11 +1,14 @@
-title: c3-wolfram-crossword-solver
+title: Crossword Solver
 hero_image: images/banner.png
-description: c3-wolfram-crossword-solver description
+description:
 version: 4
 listed: false
 copyedit: false
-last_tested: "2019-01-31"
+last_tested: "2018-12-06"
 steps:
   - title: Introduction
-  - title: Step title
-  - title: What next?
+  - title: Using the Dictionary
+  - title: Reading a Clue
+  - title: Using Wolfram Alpha to Analyse Input
+  - title: Combining Input Fields and Wolfram Alpha Code
+  - title: Building an Interface
