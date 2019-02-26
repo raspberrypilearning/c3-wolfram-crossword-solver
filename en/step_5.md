@@ -19,9 +19,38 @@ You may have noticed that your `InputField` and your results are two separate ou
 
 --- task ---
 + Use what you learned about `Column` and `Framed` in the last task to put both of your outputs into a single, framed column.
-+ Add text to explain the instructions, and to lable the `InputField` and the list of words.
++ Add text to label the `InputField` and the list of words.
 + Use `Text` and `Style` to customise the look of the text.
 + You can alter your code from the previous task.
+
+```
+Framed[Column[{x = "a__le";
+Text[Style["Crossword Solver", Large]],
+"Clue " InputField[Dynamic[x], String, ContinuousAction -> True],
+Dynamic["Possible Answers " Framed[Column[ReleaseHold[WolframAlpha[x,"WolframParse"]]]]]}]]
+```
+---/task---
+
+--- task ---
+Add some instructions expalining how to use your program to the framed column
+
+--- hints ---
+--- hint ---
+You will need to add rows of text, like the one you used to display the title.
+--- /hint ---
+--- hint ---
+Here are the text rows you should add:
+
+```
+Text[Style["Enter the clue into the box, and see a list of possible answers appear!", Medium]]
+```
+
+```
+Text[Style["Use _ to represent a missing letter", Medium ]]
+```
+--- /hint ---
+--- hint ---
+The completed table code should look like this:
 
 ```
 Framed[Column[{x = "a__le";
@@ -31,4 +60,6 @@ Text[Style["Use _ to represent a missing letter", Medium ]],
 "Clue " InputField[Dynamic[x], String, ContinuousAction -> True],
 Dynamic["Possible Answers " Framed[Column[ReleaseHold[WolframAlpha[x,"WolframParse"]]]]]}]]
 ```
----/task---
+--- /hint ---
+--- /hints ---
+--- /task ---

@@ -4,9 +4,7 @@ Have you ever struggled to complete a crossword? In this project, you'll create 
 
 ### What you will make
 
---- print-only ---
 ![Complete project](images/Complete.png)
---- /print-only ---
 
 --- collapse ---
 ---
@@ -14,12 +12,11 @@ title: What you will need
 ---
 ### Hardware
 
-+ Either a computer or a Raspberry Pi
++ A computer: desktop, laptop, or a Raspberry Pi
 
 ### Software
 
-+ Wolfram Language
-+ This project can be completed in a web browser using [wolframcloud.com](http://lab.wolframcloud.com/app/). Log in, and click Create New Notebook.
++ Wolfram Language — this is available for free on the Raspberry Pi as part of NOOBS
 
 --- /collapse ---
 
@@ -31,8 +28,6 @@ title: What you will learn
 + Using word and language data in Wolfram
 + Creating interactivity using Input Fields
 + Connecting to Wolfram Alpha knowledge
-
-If you have never used the Wolfram Language before, follow [this guide](https://projects.raspberrypi.org/en/projects/getting-started-with-mathematica). You'll need to look at Starting Mathematica and Programming in Mathematica. If you are using the web browser version of Wolfram, you only need to look at Programming in Mathematica.
 
 --- /collapse ---
 

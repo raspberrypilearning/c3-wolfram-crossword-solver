@@ -14,7 +14,7 @@ An `InputField` isn't very useful unless we can read what the user typed, and us
 {InputField[Dynamic[x]], Dynamic[x]}
 ```
 
-When you run this code, type into the `InputField`, and press Return, you'll see that the `Dynamic` value updates. This means that we can use `Dynamic[x]` in other places in the code, and the value will update whenever we change what's inside the `InputField`.
+When you run this code, type into the `InputField`, and press return, you'll see that the `Dynamic` value updates. This means that we can use `Dynamic[x]` in other places in the code, and the value will update whenever we change what's inside the `InputField`.
 
 We can customise the `InputField` a little more, in order to make it easier to use the input later on.
 
