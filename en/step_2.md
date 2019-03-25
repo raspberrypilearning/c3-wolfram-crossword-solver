@@ -21,7 +21,7 @@ Or we could find a list of all the words which start with "c", have "t" as the t
 --- task ---
 Use Wolfram to complete these words:
 
-  + h_ll_o 
+  + h_l_o 
   + r_s_ber_y
   + v_ca_ul_ry
 

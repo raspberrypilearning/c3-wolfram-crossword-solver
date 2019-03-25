@@ -6,7 +6,9 @@ We want to be able to input the clue in plain text, so that we can look up whate
 
 In order to do this, we need to have an `InputField`, so that the user can input their crossword clue.
 
-```InputField[x]```
+```
+InputField[x]
+```
 
 An `InputField` isn't very useful unless we can read what the user typed, and use it for computation. In order to use what is typed into the box, we can make use of the `Dynamic` function. `Dynamic` allows us to update values depending on the input.
 
