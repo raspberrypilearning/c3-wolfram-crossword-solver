@@ -12,7 +12,7 @@ title: What you will need
 ---
 ### Hardware
 
-+ A computer ()desktop, laptop, or Raspberry Pi)
++ A computer (desktop, laptop, or Raspberry Pi)
 
 ### Software
 
