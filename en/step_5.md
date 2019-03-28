@@ -1,8 +1,6 @@
 ## Building an interface
 
-Your final job is to build an interface for your crossword solver.
-
-You can alter your code from the previous task.
+Your final job is to build an interface for your crossword solver. To do this, change the code you already have.
 
 --- task ---
 Use `Column` and `Framed` to put the possible words into a box.
@@ -19,7 +17,7 @@ Can you see that your `InputField` and your results are two separate outputs? Yo
 
 --- task ---
 
-+ Use what you know about `Column` and `Framed` to put both of your outputs into a single, framed column
++ Use what you know about `Column` and `Framed` to put both of your outputs into a single framed column
 + Add text to label the `InputField` and the list of words
 + Use `Text` and `Style` to customise the look of the text
 
