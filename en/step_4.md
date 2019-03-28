@@ -1,4 +1,4 @@
-## Using Wolfram Alpha to analyse Iiput
+## Use Wolfram Alpha to analyse Iiput
 
 Earlier you learned that to use `DictionaryLookup`, the input needs to be in a specific format:
 + Each letter has to be interpreted as a string, with `""`
