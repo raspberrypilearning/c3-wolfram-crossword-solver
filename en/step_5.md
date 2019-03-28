@@ -1,4 +1,4 @@
-## Building an interface
+## Build an interface
 
 Your final job is to build an interface for your crossword solver. To do this, change the code you already have.
 
