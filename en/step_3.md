@@ -1,4 +1,4 @@
-## Reading a clue
+## Read a clue
 
 In this step, you will create an input field which takes user inputs and adjusts them to fit the structures needed to use `DictionaryLookup`.
 
