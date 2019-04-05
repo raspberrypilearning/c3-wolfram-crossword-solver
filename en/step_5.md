@@ -1,11 +1,9 @@
-## Building an Interface
+## Build an interface
 
-Now that you've written code which takes the user input from an `InputField` and uses Wolfram Alpha to look up the pattern in the dictionary, returning a list of possible words, you can start to build an interface.
+Your final job is to build an interface for your crossword solver. To do this, change the code you already have.
 
 --- task ---
-Let's use `Column` and `Framed` to put the possible words into a box.
-
-You can alter your code from the previous task.
+Use `Column` and `Framed` to put the possible words into a box.
 
 ```
 x = "c_t";
@@ -15,13 +13,13 @@ Framed[Column[ReleaseHold[WolframAlpha[x, "WolframParse"]]]]]
 ```
 ---/task ---
 
-You may have noticed that your `InputField` and your results are two separate outputs. We can fix this by putting both pieces of code inside a `Column`. At the same time, we can add a title, and instructions on how to use the tool.
+Can you see that your `InputField` and your results are two separate outputs? You can fix this by putting both pieces of code inside a `Column`. At the same time, you can add a title and instructions on how to use the tool.
 
 --- task ---
-+ Use what you learned about `Column` and `Framed` in the last task to put both of your outputs into a single, framed column.
-+ Add text to label the `InputField` and the list of words.
-+ Use `Text` and `Style` to customise the look of the text.
-+ You can alter your code from the previous task.
+
++ Use what you know about `Column` and `Framed` to put both of your outputs into a single framed column
++ Add text to label the `InputField` and the list of words
++ Use `Text` and `Style` to customise the look of the text
 
 ```
 Framed[Column[{x = "a__le";
@@ -32,11 +30,11 @@ Dynamic["Possible Answers " Framed[Column[ReleaseHold[WolframAlpha[x,"WolframPar
 ---/task---
 
 --- task ---
-Add some instructions expalining how to use your program to the framed column
+Add  instructions for how to use your crossword solver to the framed column.
 
 --- hints ---
 --- hint ---
-You will need to add rows of text, like the one you used to display the title.
+You need to add rows of text like the one that displays the title.
 --- /hint ---
 --- hint ---
 Here are the text rows you should add:

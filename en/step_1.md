@@ -1,6 +1,6 @@
 ## Introduction
 
-Have you ever struggled to complete a crossword? In this project, you'll create a tool to solve crosswords by inputting the letters and blank spaces you have, and getting a list of words from the dictionary which match the pattern.
+Have you ever struggled to complete a crossword? In this project, you'll create a tool that will help you solve crosswords. You will input the letters and blank spaces you have, and the tool will give you a list of words that match the pattern.
 
 ### What you will make
 
@@ -12,11 +12,11 @@ title: What you will need
 ---
 ### Hardware
 
-+ A computer: desktop, laptop, or a Raspberry Pi
++ A computer (desktop, laptop, or Raspberry Pi)
 
 ### Software
 
-+ Wolfram Language — this is available for free on the Raspberry Pi as part of NOOBS
++ Wolfram Language, available for free on the Raspberry Pi as part of the official operating system, Raspbian
 
 --- /collapse ---
 
@@ -25,9 +25,9 @@ title: What you will need
 title: What you will learn
 ---
 
-+ Using word and language data in Wolfram
-+ Creating interactivity using Input Fields
-+ Connecting to Wolfram Alpha knowledge
++ How to use word and language data in Wolfram
++ How to create interactivity using Input Fields
++ How to connect to Wolfram Alpha knowledge
 
 --- /collapse ---
 

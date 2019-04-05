@@ -1,31 +1,34 @@
-## Using Wolfram Alpha to Analyse Input
+## Use Wolfram Alpha to analyse Iiput
 
-As we learned in the first step, in order to use `DictionaryLookup`, we have to have our input in a specific format. Each letter has to be interpreted as a string, with `""`, and each blank space, `_` needs to be its own expression. Blanks cannot be strings.
+Earlier you learned that to use `DictionaryLookup`, the input needs to be in a specific format:
++ Each letter has to be interpreted as a string, with `""`
++ Each blank space, `_`, needs to be its own expression; blank spaces cannot be strings
++ Each letter or blank space is separated by `~~`. 
 
-We also noticed that each letter or blank is separated by `~~`. 
+It would be complicated to write code to format the input like this. Luckily, Wolfram has a tool that makes things easy for you. Using Wolfram Alpha's interpretation, you can take a string and run it through `DictionaryLookup` without having to format it.
 
-This is complicated, and could be difficult to code.
+Wolfram Alpha is a knowledge engine created using the Wolfram language. When you run a string through Wolfram Alpha, you get back a list of words that fit the pattern.
 
-However, we can take a string and run it through `DictionaryLookup` without having to format it by using Wolfram Alpha's interpretation. Wolfram Alpha is a knowledge engine created using the Wolfram language. When we run a string through Wolfram Alpha it returns a list of words which fit the pattern.
+This is what you should recreate:
 
 ![wolfram alpha output](images/wolfram alpha.png)
 
-This is what we want to be able to recreate. We can access the code that Wolfram Alpha is running by using `"WolframParse"`.
+With the command `"WolframParse"`, you can access the code that Wolfram Alpha runs.
 
 ![wolfram parse](images/wolframparse.png)
 
-So when we run a string through Wolfram Alpha, it's doing a `DictionaryLookup`, just like we did in the first step. But the code is on hold. `HoldComplete` means that the code hasn't been evaluated yet. We can evaluate it by using `ReleaseHold`.
+So when you run a string through Wolfram Alpha, it does a `DictionaryLookup`, just like you did at the beginning. But the code is on hold, because `HoldComplete` means that the code doesn't get evaluated yet (meaning it doesn't run yet). You can evaluate it by using `ReleaseHold`.
 
 ![release hold](images/releasehold.png)
 
-You will notice that `ReleaseHold[WolframAlpha["c_t_", "WolframParse"]]` and `DictionaryLookup["c" ~~ _ ~~ "t" ~~ _]` give the exact same output. We will use the `WolframAlpha` code. 
+Notice that `ReleaseHold[WolframAlpha["c_t_", "WolframParse"]]` and `DictionaryLookup["c" ~~ _ ~~ "t" ~~ _]` give the exact same output. You should use the `WolframAlpha` code. 
 
-Now we can combine the `InputField` and our code calling Wolfram Alpha to translate the input into readable data for the `DictonaryLookup` function.
+Now combine the `InputField` and the code calling Wolfram Alpha to translate the input into readable data for the `DictonaryLookup` function.
 
 ---task---
-Use your `InputField` code, which uses `Dynamic`, to read the input, and then use your code to call Wolfram Alpha using `"WolframParse"` to find the words which match the pattern.
+Use your `InputField` code, which uses `Dynamic`, to read the input. Then call Wolfram Alpha using `"WolframParse"` to find the words which match the pattern.
 
-You will need to define a clue at the start of your code, so that the `InputField` is never empty.
+You  need to define a clue at the start of the code, so that the `InputField` is never empty.
 
 ```
 x = "c_ts";
@@ -38,6 +41,6 @@ Dynamic[ReleaseHold[WolframAlpha[x, "WolframParse"]]]
 
 ---task---
 
-Try typing different clues into the input box, and check to see that your code is outputting a list of feasible words.
+Type in different clues into the input box, and check to see that your program outputs a list of words that fit the clue.
 
 ---/task---
