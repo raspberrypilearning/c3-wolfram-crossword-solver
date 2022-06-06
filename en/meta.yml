@@ -1,16 +1,18 @@
 ---
 title: Crossword solver
 hero_image: images/banner.png
-description:
+description: 
 version: 4
 listed: true
 copyedit: true
 last_tested: '2018-12-06'
 steps:
 - title: Introduction
-  completion: engaged
 - title: Use the dictionary
 - title: Read a clue
+  completion:
+  - engaged
 - title: Use Wolfram Alpha to analyse input
-  completion: internal
 - title: Build an interface
+  completion:
+  - internal
